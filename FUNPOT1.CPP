@@ -1,0 +1,19 @@
+#include "iostream.h"
+#include "conio.h"
+
+int Max(int a, int b)
+{
+	return(a>b ? a : b);
+}
+
+void main(void)
+{
+	int (*pMax)(int, int);
+	pMax = &Max;
+	//cls();
+	cout << (*pMax)(2,3)
+		<< pMax(4,3)
+		<< (*Max)(1,8)
+		<< Max(22,11) << endl;
+	getch();
+}

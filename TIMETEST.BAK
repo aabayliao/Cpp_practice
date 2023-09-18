@@ -1,0 +1,28 @@
+//TimeTest.cpp
+
+#include <stdio.h>
+#include <iostream.h>
+
+class Time
+{
+	int sec, min, hour;
+	char *TimeString();
+public:
+	void set(int h, int m, int s)
+		{ hour=h, min=m, sec=s; }
+	char *get() { return TimeString(); }
+	void show() { cout << TimeString(); }
+};
+
+char *Time::TimeString()
+{
+	static char str[9];
+	sprintf(str, "%2d:%2d:%2d", hour, min, sec);
+}
+
+void main()
+{
+	Time clock;
+	clock.set(12, 10, 20);
+	clock.show();
+}
