@@ -1,0 +1,16 @@
+//Test.cpp
+#include "Str.h"
+void main()
+{
+	String1 a;
+	a.show();
+	String1 b=5;
+	b.show();
+	String1 c("abcde");
+	c.show();
+	String d = String("Ken");
+	d.show();
+	String *e = new String("Allocate");
+	e->show();
+	delete e;
+}
