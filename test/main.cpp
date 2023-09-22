@@ -21,12 +21,16 @@ ExtractVector::ExtractVector(vector<int> *a)
 
 void ExtractVector::GetItem(vector<int> *p)
 {
-	
+	idx--;
 }
 
 bool ExtractVector::Done(vector<int> *p)
 {
-	//if(idx < )
+	//if(idx < p.size()){
+	//	return false;
+	//}
+	//else
+		return true;
 }
 
 int main(int argc, char *argv[])
