@@ -1,0 +1,45 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+class ExtractVector
+{
+	vector<int> *b;
+	int idx;
+public:
+	void GetItem(vector<int> *p);
+	bool Done(vector<int> *p);
+	ExtractVector(vector<int> *a);
+	~ExtractVector();
+};
+
+ExtractVector::ExtractVector(vector<int> *a)
+{
+	b = a;
+	idx = 0;
+}
+
+void ExtractVector::GetItem(vector<int> *p)
+{
+	
+}
+
+bool ExtractVector::Done(vector<int> *p)
+{
+	//if(idx < )
+}
+
+int main(int argc, char *argv[])
+{
+	vector<int> a;
+	a.push_back(2);
+	a.push_back(1);
+	a.push_back(5);
+	a.push_back(8);
+	ExtractVector EV(&a);
+	while(!EV.Done(&a)){
+		EV.GetItem(&a);
+	}
+	return 0;
+}
+
